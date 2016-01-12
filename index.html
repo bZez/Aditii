@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  	<meta charset="utf-8">
+  	<title>E-shop example</title>
+  	<link rel="stylesheet" href="CSS/normalize.css">
+  	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="CSS/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	</head>
+
+	<body>
+  	<header>
+    	<img class="logo" src="img/logo.png">
+  	  <form>
+  	    <input type="search">
+        <input type="submit" value="">
+  	  </form>
+	    <ul class="shopping-cart">
+        <li>
+          <a href="#"><img src="img/basket.png" width="50px"></a>
+        </li>
+        <li>
+          <i>300$</i>
+        </li>
+      </ul>
+	  </header>
+
+  	<nav>
+  		<ul class="main-menu">
+  			<li>Home</li>
+        |
+  			<li>Sale</li>
+        |
+  			<li>Handbags</li>
+        |
+  			<li>Accessories</li>
+        |
+  			<li>Wallets</li>
+        |
+  			<li>Sale</li>
+        |
+  			<li>Mens store</li>
+        |
+  			<li>Shoes</li>
+        |
+  			<li>Vintage</li>
+        |
+  			<li>Services</li>
+        |
+  			<li>Contact us</li>
+  		</ul>
+  	</nav> 
+
+    <script src="JS/responsiveslides.min.js"></script>
+
+    <script>
+      $(function() {
+        $(".rslides").responsiveSlides({ 
+          auto: true,
+          pager: true,
+          nav: true,
+          speed: 500,
+          namespace: "callbacks",
+        });
+      });
+    </script>
+    <div class="wrap">
+    	<ul class="rslides">
+        <li>
+      		<div class="first-slide">
+            <div class="content">
+              <div class="text-area">
+          			<h1>welcome to aditii</h1>
+          			<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of </p>
+          			<a class="button" href="#">shop now</a>
+              </div>
+        			<img src="img/slider1.png">
+            </div>
+      		</div>
+        </li>
+        <li>
+      		<div class="third-slide">
+            <div class="content">
+              <div class="text-area">
+          			<h1>Revolution</h1>
+          			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of</p>
+          			<a class="button" href="#">shop now</a>
+                </div>
+          			<img src="img/slider3.png">
+            </div>
+      		</div>
+        </li>
+        <li>
+      		<div class="fourth-slide">
+            <div class="content">
+              <div class="text-area">
+          			<h1>Quality Control</h1>
+          			<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of</p>
+          			<a class="button" href="#">shop now</a>
+              </div>
+          			<img src="img/slider4.png">
+            </div>
+      		</div>
+        </li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="JS/carousel.js"></script>
+
+
+
+    <button class="prev">&laquo;</button>
+    <button class="next">&raquo;</button>
+
+  	<div class="carousel">
+  		<ul class="mini-carousel">
+        <li>
+          <div class="mini-banner">
+            <img src="img/shoes.png" width="80px" height="60px">
+            <h2>BRANDED <br> SHOES</h2>
+            <button class="shop">SHOP</button>
+          </div>
+        </li>
+        <li>
+          <div class="mini-banner">
+            <img src="img/tees.png" width="80px" height="60px">
+            <h2>BRANDED <br> TEES</h2>
+            <button class="shop">SHOP</button>
+          </div>
+        </li>
+        <li>
+          <div class="mini-banner">
+            <img src="img/jeans.png" width="80px" height="60px">
+            <h2>BRANDED <br> JEANS</h2>
+            <button class="shop">SHOP</button>
+          </div>
+        </li>
+        <li>
+          <div class="mini-banner">
+            <img src="img/tees.png" width="80px" height="60px">
+            <h2>BRANDED <br> TEES</h2>
+            <button class="shop">SHOP</button>
+          </div>
+        </li>
+        <li>
+          <div class="mini-banner">
+            <img src="img/shoes.png" width="80px" height="60px">
+            <h2>BRANDED <br> SHOES</h2>
+            <button class="shop">SHOP</button>
+          </div>
+        </li>
+        <li>
+          <div class="mini-banner">
+            <img src="img/tees.png" width="80px" height="60px">
+            <h2>BRANDED <br> TEES</h2>
+            <button class="shop">SHOP</button>
+          </div>
+        </li>
+        <li>
+          <div class="mini-banner">
+            <img src="img/jeans.png" width="80px" height="60px">
+            <h2>BRANDED <br> JEANS</h2>
+            <button class="shop">SHOP</button>
+          </div>
+        </li>
+      </ul>
+  	</div>
+
+        <script>
+          $(function() {
+          $(".carousel").jCarouselLite({
+              btnNext: ".next",
+              btnPrev: ".prev"
+          });
+          });
+        </script>
+
+  	<main>
+  		<h1>Featured products</h1>
+  	</main>
+
+  	<footer>
+  		<ul>
+  			<li class="headline">featured sale</li>
+  			<li><a href="#">Alexis Hudson</a></li>
+  			<li><a href="#">American Apparel</a></li>
+  			<li><a href="#">Ben Sherman</a></li>
+  			<li><a href="#">Big Buddha</a></li>
+  			<li><a href="#">Channel</a></li>
+  			<li><a href="#">Christian Audigier</a></li>
+  			<li><a href="#">Coach</a></li>
+  			<li><a href="#">Cole Haan</a></li>
+  		</ul>
+  		<ul>
+  			<li class="headline">mens store</li>
+  			<li><a href="#">Alexis Hudson</a></li>
+  			<li><a href="#">American Apparel</a></li>
+  			<li><a href="#">Ben Sherman</a></li>
+  			<li><a href="#">Big Buddha</a></li>
+  			<li><a href="#">Channel</a></li>
+  			<li><a href="#">Christian Audigier</a></li>
+  			<li><a href="#">Coach</a></li>
+  			<li><a href="#">Cole Haan</a></li>
+  		</ul>
+  		<ul>
+  			<li class="headline">women store</li>
+  			<li><a href="#">Alexis Hudson</a></li>
+  			<li><a href="#">American Apparel</a></li>
+  			<li><a href="#">Ben Sherman</a></li>
+  			<li><a href="#">Big Buddha</a></li>
+  			<li><a href="#">Channel</a></li>
+  			<li><a href="#">Christian Audigier</a></li>
+  			<li><a href="#">Coach</a></li>
+  			<li><a href="#">Cole Haan</a></li>
+  		</ul>
+  		<ul>
+  			<li class="headline">quick links</li>
+  		<li><a href="#">Alexis Hudson</a></li>
+  			<li><a href="#">American Apparel</a></li>
+  			<li><a href="#">Ben Sherman</a></li>
+  			<li><a href="#">Big Buddha</a></li>
+  			<li><a href="#">Channel</a></li>
+  			<li><a href="#">Christian Audigier</a></li>
+  			<li><a href="#">Coach</a></li>
+  			<li><a href="#">Cole Haan</a></li>
+  		</ul>
+  	</footer>
+
+  </body> 
+
+
+
+
+</html>
