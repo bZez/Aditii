@@ -370,14 +370,82 @@ ul.mini-carousel {
 
 /****************MAIN SECTION*************/
 
+.main-header {
+	background-color: #3DC4B6;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
 
+.main-header h1 {
+	font-weight: bold;
+	margin-left: 5%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-shadow: 0 0.5px #999999;
+}
 
+.first-row,
+.second-row {
+	margin: 40px 0;
+	text-align: center;
+}
 
+.first-row .card-one,
+.first-row .card-two,
+.first-row .card-three {
+    display: inline-block;
+}
 
+.second-row .card-four,
+.second-row .card-five,
+.second-row .card-six {
+	display: inline-block;
+}
 
+.card {
+	width: 25%;
+	border: 0.1em solid #d9d9d9;
+	text-align: center;
+	margin: 2%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	border-bottom: 6px solid #3CC395;
+	cursor: pointer;
+	display: block;
+}
 
+.price p,
+.price button {
+	display: inline-block;
+	margin: 0 5%;
+}
 
+.card h3 {
+	font-size: 1.8em;
+	margin: 20px;
+	color: #999999;
+}
 
+.price button {
+	background-color: #3CC395;
+	color: #FFF;
+	border: none;
+	padding: 8px 23px;
+	font-size: 1.7em;
+	font-weight: bold;
+}
+
+.price p {
+	font-size: 1.6em;
+	color: #999999;
+	font-weight: bold;
+}
+
+.card:hover {
+	color: green;
+}
 
 /***************FOOTER**************/ 
 
