@@ -110,11 +110,8 @@
     <script type="text/javascript" src="JS/carousel.js"></script>
 
 
-
-    <button class="prev">&laquo;</button>
-    <button class="next">&raquo;</button>
-
   	<div class="carousel">
+      <a href="#" class="preve">&lsaquo;</a>
   		<ul class="mini-carousel">
         <li>
           <div class="mini-banner">
@@ -166,13 +163,14 @@
           </div>
         </li>
       </ul>
+      <a href="#" class="nexte">&rsaquo;</a>
   	</div>
 
         <script>
           $(function() {
           $(".carousel").jCarouselLite({
-              btnNext: ".next",
-              btnPrev: ".prev"
+              btnNexte: ".nexte",
+              btnPreve: ".preve"
           });
           });
         </script>

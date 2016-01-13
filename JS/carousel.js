@@ -115,8 +115,8 @@
                 });
 
                 // For a non-circular carousel, if the start is 0 and btnPrev is supplied, disable the prev button
-                if(!options.circular && options.btnPrev && options.start == 0) {
-                    $(options.btnPrev).addClass("disabled");
+                if(!options.circular && options.btnPreve && options.start == 0) {
+                    $(options.btnPreve).addClass("disabled");
                 }
             }
 
@@ -149,14 +149,14 @@
             }
 
             function attachEventHandlers() {
-                if(options.btnPrev) {
-                    $(options.btnPrev).click(function() {
+                if(options.btnPreve) {
+                    $(options.btnPreve).click(function() {
                         return go(calculatedTo - options.scroll);
                     });
                 }
 
-                if(options.btnNext) {
-                    $(options.btnNext).click(function() {
+                if(options.btnNexte) {
+                    $(options.btnNexte).click(function() {
                         return go(calculatedTo + options.scroll);
                     });
                 }
@@ -232,10 +232,10 @@
             }
 
             function disableOrEnableButtons() {
-                $(options.btnPrev + "," + options.btnNext).removeClass("disabled");
-                $( (calculatedTo-options.scroll<0 && options.btnPrev)
+                $(options.btnPreve + "," + options.btnNexte).removeClass("disabled");
+                $( (calculatedTo-options.scroll<0 && options.btnPreve)
                     ||
-                    (calculatedTo+options.scroll > itemLength-numVisible && options.btnNext)
+                    (calculatedTo+options.scroll > itemLength-numVisible && options.btnNexte)
                     ||
                     []
                 ).addClass("disabled");
@@ -259,8 +259,8 @@
     };
 
     $.fn.jCarouselLite.options = {
-        btnPrev: null,              // CSS Selector for the previous button
-        btnNext: null,              // CSS Selector for the next button
+        btnPreve: null,              // CSS Selector for the previous button
+        btnNexte: null,              // CSS Selector for the next button
         btnGo: null,                // CSS Selector for the go button
         mouseWheel: false,          // Set "true" if you want the carousel scrolled using mouse wheel
         auto: null,                 // Set to a numeric value (800) in millis. Time period between auto scrolls
