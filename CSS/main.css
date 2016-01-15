@@ -41,15 +41,16 @@ input[type="search"] {
 input[type="submit"] {
 	background: url(../img/search.png);
 	position: absolute;
-	top: 4px;
-	right: 40px;
+	top: 10%;
+	right: 10%;
 	height: 26px;
 	width: 26px;
 	border: none;
 }
 
 input[type="submit"]:hover {
-	background-color: black;
+	cursor: pointer;
+	background: url(../img/search_green.png);
 }
 
 .shopping-cart {
@@ -304,7 +305,7 @@ ul.mini-carousel {
 	width: 170px;
 	height: 110px;
 	margin: 25px 30px;
-
+	cursor: pointer;
 }
 
 .mini-banner h2 {
@@ -315,7 +316,7 @@ ul.mini-carousel {
 	font-size: 1.3em;
 	color: #999999;
 	cursor: pointer;
-	transition: color 1s ease-in-out;
+	transition: color 0.5s ease-in-out;
 }
 
 .mini-banner button {
@@ -328,11 +329,11 @@ ul.mini-carousel {
 	padding: 10px 25px;
 	font-size: 1.4em;
 	font-weight: bold;
-	transition: color 1s ease-in-out;
+	transition: color 0.5s ease-in-out;
 }
 
-.mini-banner button:hover,
-.mini-banner h2:hover {
+.mini-banner:hover button,
+.mini-banner:hover h2 {
 	color: black;
 }
 
@@ -426,6 +427,7 @@ ul.mini-carousel {
 	font-size: 1.8em;
 	margin: 20px;
 	color: #999999;
+	transition: color 0.5s ease-in-out;
 }
 
 .price button {
@@ -435,6 +437,7 @@ ul.mini-carousel {
 	padding: 8px 23px;
 	font-size: 1.7em;
 	font-weight: bold;
+	transition: color 0.5s ease-in-out;
 }
 
 .price p {
@@ -447,12 +450,72 @@ ul.mini-carousel {
 	color: green;
 }
 
+.card:hover h3,
+.card:hover button {
+	color: #009973;
+}
+
 /***************FOOTER**************/ 
 
 
+footer {
+	background-color: #3DC4B6;
+	margin-top: 150px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 
+footer ul.col {
+	display: inline-block; 
+	width: 15%;
+	margin-left: 8%;
+	padding-left: 0;
+}
 
+footer ul li {
+	list-style: none;
+}
 
+.col li.headline {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+.col li a {
+	text-decoration: none;
+	color: white;
+	line-height: 2em;
+}
+
+.col li a:hover {
+	text-decoration: underline;
+}
+
+/***************Credits**************/ 
+
+.footer {
+	background-color: #2DA89B;
+	color: #fff;
+	text-align: center;
+}
+
+.footer p {
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.footer a {
+	color: #fff;
+}
+
+.footer a:hover {
+	text-decoration: none;
+}
 
 
 
