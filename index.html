@@ -4,17 +4,19 @@
   	<meta charset="utf-8">
   	<title>E-shop example</title>
   	<link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
   	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="CSS/main.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="JS/mobileMenu.js"></script>
 	</head>
 
 	<body>
   	<header>
     	<img class="logo" src="img/logo.png">
-  	  <form>
-  	    <input type="search">
+  	  <form class="big">
+  	    <input type="search" placeholder="Search">
         <input type="submit" value="">
   	  </form>
 	    <ul class="shopping-cart">
@@ -27,31 +29,49 @@
       </ul>
 	  </header>
 
-  	<nav>
+  	<div class="nav">
   		<ul class="main-menu">
-  			<li>Home</li>
+  			<li class="tab">Home</li>
         |
-  			<li>Sale</li>
+  			<li class="tab">Sale</li>
         |
-  			<li>Handbags</li>
+  			<li class="tab">Handbags</li>
         |
-  			<li>Accessories</li>
+  			<li class="tab">Accessories</li>
         |
-  			<li>Wallets</li>
+  			<li class="tab">Wallets</li>
         |
-  			<li>Sale</li>
+  			<li class="tab">Sale</li>
         |
-  			<li>Mens store</li>
+  			<li class="tab">Mens store</li>
         |
-  			<li>Shoes</li>
+  			<li class="tab">Shoes</li>
         |
-  			<li>Vintage</li>
+  			<li class="tab">Vintage</li>
         |
-  			<li>Services</li>
+  			<li class="tab">Services</li>
         |
-  			<li>Contact us</li>
+  			<li class="tab">Contact us</li>
   		</ul>
-  	</nav> 
+
+      <ul class="mobile-tabs">
+        <li class="nav-tabs">home</li>
+        <li class="nav-tabs">sale</li>
+        <li class="nav-tabs">handbags</li>
+        <li class="nav-tabs">accessories</li>
+        <li class="nav-tabs">shoes</li>
+        <li class="nav-tabs">services</li>
+        <li class="nav-tabs">contact</li>
+      </ul>
+
+      <div class="nav-mobile"> </div>
+
+      <form class="small">
+        <input type="search" placeholder="Search">
+        <input type="submit" value="">
+      </form>
+
+  	</div> 
 
     <script src="JS/responsiveslides.min.js"></script>
 
@@ -285,6 +305,11 @@
     <div class="footer">
       <p>© 2014 Aditii. All rights reserved | Template by   <a href="#">W3Layouts</a>
     </div>
+
+    <a href="#" class="to-top">Top</a>
+    
+
+
 
   </body> 
 

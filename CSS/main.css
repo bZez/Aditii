@@ -26,29 +26,57 @@ header > * {
 	max-width: 110px;
 }
 
-form {
+
+.small, 
+.nav-mobile,
+.mobile-tabs {
+	display: none;
+}
+
+@media screen and (min-width: 801px) {
+	 .small, 
+     .nav-mobile,
+     .mobile-tabs {
+	   display: none !important;
+     }
+}
+
+
+
+
+
+.big {
 	width: 40%;
 	position: relative;
 }
 
-input[type="search"] {
+.big input[type="search"] {
 	width: 90%;
 	height: 30px;
 	border: 1px solid lightgrey;
 	border-radius: 3px;
+	padding-left: 10px;
 }
 
-input[type="submit"] {
+.big input[type="submit"] {
 	background: url(../img/search.png);
 	position: absolute;
 	top: 10%;
-	right: 10%;
+	right: 8%;
 	height: 26px;
 	width: 26px;
 	border: none;
 }
 
-input[type="submit"]:hover {
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+
+.big input[type="search"]::webkit-input-placeholder {
+  color: white;
+};
+
+.big input[type="submit"]:hover {
 	cursor: pointer;
 	background: url(../img/search_green.png);
 }
@@ -424,7 +452,7 @@ ul.mini-carousel {
 }
 
 .card h3 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 	margin: 20px;
 	color: #999999;
 	transition: color 0.5s ease-in-out;
@@ -517,9 +545,20 @@ footer ul li {
 	text-decoration: none;
 }
 
+/*******SCROLL TO TOP*******/
 
-
-
+.to-top {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	font-size: 1.7em;
+	background: url(../img/top_move.png) no-repeat;
+	overflow: visible;
+	display: block;
+	text-indent: -9999px;
+	height: 40px;
+	width: 40px;
+}
 
 
 
