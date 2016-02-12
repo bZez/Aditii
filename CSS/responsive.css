@@ -91,9 +91,32 @@
 	width: 30%;
 	margin-left: 8%;
 	padding-left: 0;
-}
+    margin-right: 10%
+    }
 
+/**************SLIDER****************/
 
+    .wrap .content h1 {
+        font-size: 2.5em;
+    }
+
+    .wrap .content p {
+        font-size: 1em;
+    }
+
+    .content img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .wrap .rslides a {
+        font-size: 1.1em; 
+        padding: 5px 20px;
+    }
+
+    ul.callbacks_tabs.callbacks1_tabs {
+    left: 37% !important;
+    }
 
 }
 

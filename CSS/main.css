@@ -6,7 +6,6 @@
 
 
 
-
 /***************HEADER**************/
 
 header {
@@ -23,7 +22,7 @@ header > * {
 }
 
 .logo {
-	max-width: 110px;
+	width: 110px;
 }
 
 
@@ -312,15 +311,6 @@ ul.callbacks_tabs.callbacks1_tabs li a {
 
 /***************MINI CAROUSEL**************/ 
 
-ul.mini-carousel {
-	list-style: none;
-}
-
-.carousel {
-	margin: 30px auto;
-	padding-left: 20px;
-	padding-right: 20px;
-}
 
 .little-wrapper {
 	position: relative;
@@ -332,7 +322,7 @@ ul.mini-carousel {
 	position: relative;
 	width: 170px;
 	height: 110px;
-	margin: 25px 30px;
+	margin: 20px;
 	cursor: pointer;
 }
 
@@ -365,10 +355,7 @@ ul.mini-carousel {
 	color: black;
 }
 
-.carousel a.preve {
-	position: absolute;
-	top: 17%;
-	left: 0%;
+.customNavigation a.btn.preve {
 	text-decoration: none;
 	text-indent: -9999px;
 	background: url(../img/c-arrows.png);
@@ -379,10 +366,7 @@ ul.mini-carousel {
 	visibility: visible;
 }
 
-.carousel a.nexte {
-	position: absolute;
-	top: 17%;
-	right: 0%;
+.customNavigation a.btn.nexte {
 	text-decoration: none;
 	text-indent: -9999px;
 	background: url(../img/c-arrows.png);
@@ -392,8 +376,6 @@ ul.mini-carousel {
 	z-index: 10001;
 	background-position: -30px 2px;
 }
-
-
 
 
 

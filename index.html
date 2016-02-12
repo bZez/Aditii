@@ -5,11 +5,17 @@
   	<title>E-shop example</title>
   	<link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/responsive.css">
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="CSS/owl.carousel.css">
+ 
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="CSS/owl.theme.css">
   	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="CSS/main.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="JS/mobileMenu.js"></script>
+    <script src="JS/owl.carousel.js"></script>
 	</head>
 
 	<body>
@@ -96,7 +102,7 @@
           			<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of </p>
           			<a class="button" href="#">shop now</a>
               </div>
-        			<img src="img/slider1.png">
+        			<img src="img/slider1.png" >
             </div>
       		</div>
         </li>
@@ -108,7 +114,7 @@
           			<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of</p>
           			<a class="button" href="#">shop now</a>
                 </div>
-          			<img src="img/slider3.png">
+          			<img src="img/slider3.png" >
             </div>
       		</div>
         </li>
@@ -120,80 +126,56 @@
           			<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of</p>
           			<a class="button" href="#">shop now</a>
               </div>
-          			<img src="img/slider4.png">
+          			<img src="img/slider4.png" >
             </div>
       		</div>
         </li>
       </ul>
     </div>
 
-    <script type="text/javascript" src="JS/carousel.js"></script>
 
-
-  	<div class="carousel">
-      <a href="#" class="preve">&lsaquo;</a>
-  		<ul class="mini-carousel">
-        <li>
+  	<div id="owl-example" class="owl-carousel">
           <div class="mini-banner">
             <img src="img/shoes.png" width="80px" height="60px">
             <h2>BRANDED <br> SHOES</h2>
             <button class="shop">SHOP</button>
           </div>
-        </li>
-        <li>
           <div class="mini-banner">
             <img src="img/tees.png" width="80px" height="60px">
             <h2>BRANDED <br> TEES</h2>
             <button class="shop">SHOP</button>
           </div>
-        </li>
-        <li>
           <div class="mini-banner">
             <img src="img/jeans.png" width="80px" height="60px">
             <h2>BRANDED <br> JEANS</h2>
             <button class="shop">SHOP</button>
           </div>
-        </li>
-        <li>
           <div class="mini-banner">
             <img src="img/tees.png" width="80px" height="60px">
             <h2>BRANDED <br> TEES</h2>
             <button class="shop">SHOP</button>
           </div>
-        </li>
-        <li>
           <div class="mini-banner">
             <img src="img/shoes.png" width="80px" height="60px">
             <h2>BRANDED <br> SHOES</h2>
             <button class="shop">SHOP</button>
           </div>
-        </li>
-        <li>
           <div class="mini-banner">
             <img src="img/tees.png" width="80px" height="60px">
             <h2>BRANDED <br> TEES</h2>
             <button class="shop">SHOP</button>
           </div>
-        </li>
-        <li>
           <div class="mini-banner">
             <img src="img/jeans.png" width="80px" height="60px">
             <h2>BRANDED <br> JEANS</h2>
             <button class="shop">SHOP</button>
           </div>
-        </li>
-      </ul>
-      <a href="#" class="nexte">&rsaquo;</a>
   	</div>
 
-        <script>
-          $(function() {
-          $(".carousel").jCarouselLite({
-              btnNexte: ".nexte",
-              btnPreve: ".preve"
-          });
-          });
-        </script>
+<!--     <div class="customNavigation">
+      <a class="btn preve">Previous</a>
+      <a class="btn nexte">Next</a>
+    </div> -->
 
   	<div class="main-header">
   		<h1>Featured products</h1>
@@ -307,6 +289,14 @@
     </div>
 
     <a href="#" class="to-top">Top</a>
+
+    <script>
+      $(document).ready(function() {
+ 
+          $("#owl-example").owlCarousel();
+ 
+     });
+    </script>
     
 
 
