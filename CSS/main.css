@@ -355,18 +355,23 @@ ul.callbacks_tabs.callbacks1_tabs li a {
 	color: black;
 }
 
-.customNavigation a.btn.preve {
+.customNavigation a.prev {
+	display: inline-block;
 	text-decoration: none;
 	text-indent: -9999px;
 	background: url(../img/c-arrows.png);
 	width: 34px;
 	height: 85px;
 	z-index: 10000;
-	margin-right: 10px;
 	visibility: visible;
+	cursor: pointer;
+	position: relative;
+	bottom: 150px;
+	left: 7%;
 }
 
-.customNavigation a.btn.nexte {
+.customNavigation a.next {
+	display: inline-block;
 	text-decoration: none;
 	text-indent: -9999px;
 	background: url(../img/c-arrows.png);
@@ -375,6 +380,11 @@ ul.callbacks_tabs.callbacks1_tabs li a {
 	visibility: visible;
 	z-index: 10001;
 	background-position: -30px 2px;
+	cursor: pointer;
+	float: right;
+	position: relative;
+	bottom: 150px;
+	right: 7%;
 }
 
 
@@ -386,6 +396,7 @@ ul.callbacks_tabs.callbacks1_tabs li a {
 	color: #fff;
 	text-transform: uppercase;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
+	margin-top: -90px;
 }
 
 .main-header h1 {

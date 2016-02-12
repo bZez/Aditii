@@ -118,6 +118,10 @@
     left: 37% !important;
     }
 
+    .wrap .content {
+        padding-top: 30px;
+    }
+
 }
 
 

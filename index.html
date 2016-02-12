@@ -172,10 +172,10 @@
           </div>
   	</div>
 
-<!--     <div class="customNavigation">
-      <a class="btn preve">Previous</a>
-      <a class="btn nexte">Next</a>
-    </div> -->
+    <div class="customNavigation">
+      <a class="btn prev">Previous</a>
+      <a class="btn next">Next</a>
+    </div>
 
   	<div class="main-header">
   		<h1>Featured products</h1>
@@ -293,7 +293,13 @@
     <script>
       $(document).ready(function() {
  
-          $("#owl-example").owlCarousel();
+          var owl = $("#owl-example").owlCarousel();
+          $(".next").click(function(){
+            owl.trigger('owl.next');
+          })
+          $(".prev").click(function(){
+            owl.trigger('owl.prev');
+          })
  
      });
     </script>
