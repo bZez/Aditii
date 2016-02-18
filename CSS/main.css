@@ -59,9 +59,14 @@ header > * {
 
 .big input[type="submit"] {
 	background: url(../img/search.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-attachment: scroll;
+    background-width: 100% auto;
 	position: absolute;
 	top: 10%;
 	right: 8%;
+	background-size: 26px 26px;
 	height: 26px;
 	width: 26px;
 	border: none;

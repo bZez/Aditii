@@ -37,6 +37,10 @@
 
     .small input[type="submit"] {
 	background: url(../img/search.png) ;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: scroll;
+    background-width: 100% auto;
 	position: absolute;
 	top: 10%;
 	right: -45%;
@@ -85,6 +89,16 @@
     	color: #fff;
     }
 
+    .main img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .main .card {
+        vertical-align: middle;
+        height: 90%;
+    }
+
 
     body footer ul.col {
 	display: inline-block; 
@@ -124,4 +138,20 @@
 
 }
 
+@media screen and (max-width: 500px) {
 
+
+  .main .card {
+    width: 90%;
+  }
+
+
+
+
+
+
+
+
+
+
+}
